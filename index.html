@@ -3,31 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <p>
-            "Educação não é o aprendizado de fatos, mas o treinamento da mente para pensar."
-            <span>Mileva Maric</span>
-        </p>
-    </div>
+    <div class="container">
+        <div class="hero">
+            <p>
+                <i>"Educação não é o aprendizado de fatos, mas o treinamento da mente para pensar."</i>
+                <span><i>Mileva Maric</i></span>
+            </p>
+        </div>
+    
 
-    <div>
-        <h1>Bem-vindo de volta</h1>
+    <div class='formulario'>
+        <div>
+        <h1>Bem-vindo de volta!</h1>
         <P>Por favor, insira seus credenciais para acessar seu painel acadêmico</P> 
 
         <form action="/login" method="post">
             <label for="">Endereço de e-mail</label>
             <input type="text" placeholder="user@email.com"/>
 
-            <label for="">Senha</label>
-            <input name="senha" id="senha" type="password"/>
-            <a href="/esqueceu.html">Esqueceu?</a>
+            <label for="">
+                Senha 
+                <a href="/esqueceu.html">Esqueceu?</a></label>
+            <input name="senha" id="senha" type="password" placeholder="**************"/>
             <button type="submit">Entrar</button>
         </form>
         <p>Não tem conta? <a href="registro.html">Registre-se agora.</a></p>
     </div>
-
+    </div>
 </body>
 </html>
